@@ -245,11 +245,7 @@ body{
 }
 
 
-.product-list{
-  /* width: 100%; */
-  
-  /* overflow-x: auto; */
-}
+/* */
 .product-item{
   display: flex;
   justify-content: space-between;
