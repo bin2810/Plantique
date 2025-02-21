@@ -7,7 +7,7 @@ window.addEventListener("scroll", function() {
         banner.style.margin = "0";
     } else {
         navbar.style.top = "5rem";
-        banner.style.margin = "6rem 0";
+        banner.style.margin = "6rem 0 0 0" ;
 
     }
 });
