@@ -54,7 +54,7 @@ body{
 .menu-item {
   color: var(--green-color);
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.50rem;
 }
 
 .menu-item:hover {

@@ -1,7 +1,7 @@
 $(function () {
     // Mở sidebar khi bấm nút #bars
     $('#bars').click(function () {
-        $(".nav-category").toggleClass('show-nav');
+        $(".nav-category").addClass('show-nav');
     });
 
     // Đóng sidebar khi bấm ngoài
@@ -13,7 +13,7 @@ $(function () {
 
     // Hàm xử lý dropdown theo kích thước màn hình
     function handleDropdown() {
-        if (window.innerWidth <= 1024) {
+        if (window.innerWidth <= 1070) {
             $(".dropdown").hide(); // Ẩn dropdown khi nhỏ hơn 1024px
             $('.menu-item').off("click").on("click", function () {
                 $(".dropdown").not($(this).next()).slideUp();
