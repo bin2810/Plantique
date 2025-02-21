@@ -127,10 +127,10 @@
     
     .banner {
         width: 100%;
-        height: 100%;
+        height: 400px;
         overflow: hidden;
         position: relative;
-      }
+    }
 
     .banner-img::before {
         position: absolute;
@@ -138,9 +138,17 @@
         top: 0;
         left: 0;
         width: 100%;
+        height: 400px;
         background-color: rgba(0, 0, 0, 0.4);
     }
-
+    .banner img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: 32% 24%;
+    }
     .baner-img-content p{
         width: 100%;
         text-align: center;
@@ -216,29 +224,32 @@
 
 
 
+    .baner-img-content {
+        width: 100%;
+    }
     .baner-img-content p{
         width: 100%;
         text-align: center;
-        margin: 1rem 0;
+        margin: 2rem 0;
         font-weight: bold;
         color: var(--PalePink-color);
     }
     .baner-img-content p:first-child{
-        font-size: 1rem;
+        font-size: 2rem;
       }
       .baner-img-content p:nth-child(2){
-        font-size: 0.5rem;
+        font-size: 1rem;
       }
       .baner-img-content p:nth-child(3){
-        margin: 2rem 0;
+        margin: 4rem 0;
       }
       .baner-img-content a{
-        font-size: 0.6rem;
+        font-size: 1rem;
         font-weight:bold;
         text-decoration: none;
         color: var(--PalePink-color);
         background-color: var(--green-color);
-        padding: 1rem 2rem;
+        padding: 1.5rem 4rem;
         border-radius: 2rem;
         transition: all 0.2s ease-in-out;
       }
