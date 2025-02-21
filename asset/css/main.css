@@ -308,7 +308,7 @@ body{
   border-radius: 2rem;
   padding: 1rem;
   border: 1px solid var(--green-color);
-  display: none
+  display: none;
 }
 .btnaddcart:hover{
   background-color: var(--green-color);
