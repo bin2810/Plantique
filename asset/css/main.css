@@ -259,10 +259,63 @@ body{
   /* margin-right: 4rem; */
   /* flex:0 0 auto; */
   width: 28%;
+  position: relative;
   
 }
 .product-item-col-img{
   width: 100%;
+}
+.discount::before{
+  position: absolute;
+  content: "Giảm 30%";
+  top: 1rem;
+  left: 2rem;
+  /* width: 100%; */
+  background-color: var(--PalePink-color);
+  display: block;
+  color: var(--green-color);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.new::before{
+  position: absolute;
+  content: "New";
+  top: 1rem;
+  left: 2rem;
+  /* width: 100%; */
+  background-color: var(--PalePink-color);
+  display: block;
+  color: var(--green-color);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.product-item-col-img{
+  position: relative;
+}
+.btnaddcart{
+  position: absolute;
+  bottom: 2rem;
+  left:1.5rem;
+  width: 90%;
+  background-color: var(--PalePink-color);
+  color: var(--green-color);
+  font-weight: bold;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--green-color);
+  display: none
+}
+.btnaddcart:hover{
+  background-color: var(--green-color);
+  color: var(--PalePink-color);
+}
+.product-item-col-img:hover .btnaddcart{
+  display: block;
 }
 .product-item-col-img img{
   max-width: 100%;
