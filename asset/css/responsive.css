@@ -204,7 +204,7 @@
       .product-item-col{
         margin-right: 2rem;
         flex:0 0 auto;
-        width: 40%;
+        width: 30%;
         
       }
       .product-item-col-img{
@@ -212,7 +212,7 @@
       }
       .product-item-col-img img{
         max-width: 100%;
-        height: 100%;
+        height: auto;
       }
     .hide-product{
         display: block;
@@ -307,10 +307,10 @@
 
 
       .product-item-col{
-        margin-right: 2rem;
+        margin-right: 1.6rem;
         flex:0 0 auto;
-        width: 65%;
+        width: 60%;
         
       }
-     
+      
 }
