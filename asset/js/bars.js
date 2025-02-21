@@ -1,30 +1,35 @@
 $(function () {
+    // Mở sidebar khi bấm nút #bars
     $('#bars').click(function () {
-        $(".nav-category").addClass('show-nav');
-        $(".nav-category").css("transition", "transform 1s ease-in-out");
+        $(".nav-category").toggleClass('show-nav');
     });
 
+    // Đóng sidebar khi bấm ngoài
     $(document).click(function (event) {
-        if (!$(event.target).closest(".nav-category, #bars").length) {
-            $(".nav-category").removeClass('show-nav');
-        $(".nav-category").css("transition", "transform 0.2s ease-out");
-
-        }   
+        if ($(".nav-category").hasClass("show-nav") && !$(event.target).closest(".nav-category, #bars").length) {
+            $(".nav-category").removeClass("show-nav");
+        }
     });
-});
 
-
-
-
-$(function () {
-    if (window.innerWidth <= 1024) { 
-        $(".menu-list").css("pointer-events", "auto");
-        $(".dropdown").hide(); 
-
-        $('.menu-item').click(function () {
-            // Đóng tất cả dropdown khác
-            // $(".dropdown").not($(this).next()).slideUp();
-            $(this).next(".dropdown").slideToggle();
-        });
+    // Hàm xử lý dropdown theo kích thước màn hình
+    function handleDropdown() {
+        if (window.innerWidth <= 1024) {
+            $(".dropdown").hide(); // Ẩn dropdown khi nhỏ hơn 1024px
+            $('.menu-item').off("click").on("click", function () {
+                $(".dropdown").not($(this).next()).slideUp();
+                $(this).next(".dropdown").slideToggle();
+            });
+        } else {
+            $(".dropdown").css("display", ""); // Reset về CSS mặc định để tránh lỗi
+            $('.menu-item').off("click"); // Xóa sự kiện click khi màn hình lớn
+        }
     }
+
+    // Gọi hàm kiểm tra ngay khi tải trang
+    handleDropdown();
+
+    // Kiểm tra lại khi resize màn hình
+    $(window).resize(function () {
+        handleDropdown();
+    });
 });
