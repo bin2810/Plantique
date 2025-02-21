@@ -123,6 +123,55 @@
         font-weight: 500;
         font-size: 1.6rem;
     }
+
+    
+    .banner {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+    .banner-img::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .baner-img-content p{
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0;
+        font-weight: bold;
+        color: var(--PalePink-color);
+    }
+    .baner-img-content p:first-child{
+        font-size: 2rem;
+      }
+      .baner-img-content p:nth-child(2){
+        font-size: 1rem;
+      }
+      .baner-img-content p:nth-child(3){
+        margin: 5rem 0;
+      }
+      .baner-img-content a{
+        font-size: 1.5rem;
+        font-weight:bold;
+        text-decoration: none;
+        color: var(--PalePink-color);
+        background-color: var(--green-color);
+        padding: 1.4rem 5rem;
+        border-radius: 2rem;
+        transition: all 0.2s ease-in-out;
+      }
+      .baner-img-content a:hover{
+        color: var(--green-color);
+        background-color: var(--bgnav-color);
+        
+      }
         
 }
 
@@ -164,4 +213,38 @@
     .show-nav{
         transform: translateX(0);
     }
+
+
+
+    .baner-img-content p{
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        font-weight: bold;
+        color: var(--PalePink-color);
+    }
+    .baner-img-content p:first-child{
+        font-size: 1rem;
+      }
+      .baner-img-content p:nth-child(2){
+        font-size: 0.5rem;
+      }
+      .baner-img-content p:nth-child(3){
+        margin: 2rem 0;
+      }
+      .baner-img-content a{
+        font-size: 0.6rem;
+        font-weight:bold;
+        text-decoration: none;
+        color: var(--PalePink-color);
+        background-color: var(--green-color);
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        transition: all 0.2s ease-in-out;
+      }
+      .baner-img-content a:hover{
+        color: var(--green-color);
+        background-color: var(--bgnav-color);
+        
+      }
 }
