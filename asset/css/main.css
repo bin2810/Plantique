@@ -362,3 +362,40 @@ body{
   line-height: 3rem;
 
 }
+
+.radio-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.radio {
+  /* margin: 2rem; */
+  width: 3rem;
+  height: 30px;
+  border-radius: 50%;
+  /* border: 0.4rem solid transparent; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.radio input {
+  display: none;
+}
+
+.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+/* Màu sắc từng nút */
+.radio:nth-child(1) .circle { background-color: #e0e3e7; }
+.radio:nth-child(2) .circle { background-color: #b7764e; }
+.radio:nth-child(3) .circle { background-color: #385877; }
+
+/* Hiệu ứng khi được chọn */
+.radio input:checked + .circle {
+  border: 0.4rem solid var(--green-color); /* Màu viền xanh đậm */
+}
