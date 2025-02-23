@@ -413,25 +413,79 @@ body{
 
 
 
-.taste-list{
+.interest-list{
   display: flex;
   gap: 15px;
   justify-content: space-between;
 }
 
-.taste-item{
+.interest-item{
   padding: 1rem 1rem;
 }
-.taste-item >a> img{
+.interest-item >a> img{
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
-.taste-item p{
+.interest-item p{
   font-size: 1.8rem;
   text-align: center;
   padding: 1.5rem 0;
   color: var(--green-color);
   font-weight: bold;
+}
+
+
+.plant-highlight{
+  margin: 8rem 0;
+  background-color:rgb(246, 207, 178,0.6);
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+
+.feature-product{
+  display: flex;
+  justify-content: space-around;
+  padding: 7rem 0;
+}
+.feature-product video{
+  border-radius: 1rem;
+}
+
+.feature-product-content {
+  width: 40%;
+  /* padding: 0 8rem; */
+}
+.feature-title p{
+  /* width: 80%; */
+  text-align: center;
+  margin: 2rem 0;
+  line-height:4rem;
+  color: var(--green-color);
+
+}
+.feature-title p:nth-child(1){
+  font-size: 2.8rem; 
+  font-weight: bold;
+}
+.feature-title p:nth-child(2){
+  font-size: 2.7rem; 
+}
+.feature-title p:nth-child(3){
+  font-size: 2.2rem; 
+}
+.feature-title a{
+  text-decoration: none;
+  color: var(--bgnav-color);
+  background-color: var(--green-color);
+  font-size: 1.6rem; 
+  padding: 1.5rem 4rem;
+  border-radius:1rem;
+}
+
+.hide-pc{
+  display: none;
 }

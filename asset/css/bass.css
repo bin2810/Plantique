@@ -3,9 +3,10 @@
     --PalePink-color: #F6CFB2;
     --Linen-color:#F5F0E6;
     --bgnav-color:#FCF9F3;
-    
 }
-
+body{
+    background-color: var(--bgnav-color);
+}
 *{
     box-sizing: border-box;
 }
