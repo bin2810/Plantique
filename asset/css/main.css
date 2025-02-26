@@ -439,7 +439,7 @@ body{
 
 .plant-highlight{
   margin: 8rem 0;
-  background-color:rgb(246, 207, 178,0.6);
+  background-color: var(--bg-color);
   height: 500px;
   width: 100%;
   position: relative;
@@ -488,4 +488,124 @@ body{
 
 .hide-pc{
   display: none;
+}
+
+
+
+.bg-chat{
+  margin: 8rem 0 4rem 0;
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+.chat-user{
+  display: flex;
+  gap: 5rem;
+}
+
+.chat-user-content,
+.chat-user-img{
+  flex: 1 0 0%;
+}
+.chat-user-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chat-user-content p{
+  color: var(--green-color);
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem
+}
+.chat-user-content p:nth-child(1){
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+.chat-user-content p:nth-child(2){
+  width: 85%;
+  font-size: 2rem;
+}
+.chat-user-content p:nth-child(3){
+  margin: 2rem 0 0 0 ;
+}
+.chat-user-content button{
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  color: var(--green-color);
+  font-weight: bold;
+  border: 0rem  solid var(--green-color);
+  transition: background 0.5s ease-in-out;
+}
+.chat-user-content button:hover{
+  color: var(--PalePink-color);
+  /* border: 1rem  solid var(--green-color); */
+  background-color: var(--green-color);
+}
+.chat-user-img img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.bg-gift{
+  /* margin: 2rem 0; */
+  padding: 2rem;
+  /* background-color: var(--bg-color); */
+}
+.gift{
+  display: flex;
+  gap: 5rem;
+}
+
+.gift-content,
+.gift-img{
+  flex: 1 0 0%;
+}
+.gift-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gift-content p{
+  color: var(--green-color);
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem
+}
+.gift-content p:nth-child(1){
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+.gift-content p:nth-child(2){
+  width: 85%;
+  font-size: 2rem;
+}
+.gift-content p:nth-child(3){
+  margin: 2rem 0 0 0 ;
+}
+.gift-content a{
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  color: var(--PalePink-color);
+  background-color: var(--green-color);
+  font-weight: bold;
+  border: 0rem  solid var(--green-color);
+  transition: background 0.5s ease-in-out;
+}
+.gift-content a:hover{
+  color: var(--green-color);
+  /* border: 1rem  solid var(--green-color); */
+  background-color: var(--PalePink-color);
+}
+.gift-img img{
+  width: 100%;
+  height: auto;
 }

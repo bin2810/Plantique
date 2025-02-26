@@ -404,4 +404,31 @@
     padding: 1.5rem 4rem;
     border-radius: 1rem;
   }
+  .chat-user{
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+  .gift{
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+  .gift-content{
+    order: 1;
+  }
+  .gift-img{
+    order: 2;
+  }
+  .gift-video{
+    width: 100%;
+    height: 50rem;
+    order: 2;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .gift-video video{
+    width: 100%;
+    
+  }
 }

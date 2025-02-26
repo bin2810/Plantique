@@ -3,6 +3,7 @@
     --PalePink-color: #F6CFB2;
     --Linen-color:#F5F0E6;
     --bgnav-color:#FCF9F3;
+    --bg-color:rgb(246, 207, 178,0.6);
 }
 body{
     background-color: var(--bgnav-color);
