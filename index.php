@@ -686,7 +686,7 @@
             </div>
           </div>
         </div>
-        <div class="container-full bg-gift">
+        <div class="container-full bg-gift hide-pc">
         <div class="container-center">
             <div class="gift">
               <div class="gift-img">
