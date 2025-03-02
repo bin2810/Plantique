@@ -1,0 +1,63 @@
+.bg-dashboard{
+    margin: 20rem 0;
+}
+
+.dashboard{
+    display: flex;
+    width: 120rem;
+    margin: 15rem auto 15rem auto;
+    gap: 5rem;
+}
+
+.menu-navigation-bar{
+    padding: 5rem;
+}
+.dashboard-content{
+    padding: 2rem;
+}
+
+.menu-navigation-item{
+    padding: 0.8rem 0;
+    border-bottom: 2px solid var(--green-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-navigation-item a{
+    text-decoration: none;
+    color: var(--green-color);
+    font-size: 2rem;
+}
+.menu-navigation-item i{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--green-color);
+    font-size: 1.8rem;
+}
+
+.dashboard-content{
+    flex: 1 ;
+}
+
+.bangdieukhien p{
+    font-size: 2.8rem;
+}
+
+.donhang p{
+    font-size: 2.8rem;
+}
+.phieugiamgia p{
+    font-size: 2.8rem;
+}
+
+.diachi{
+    display: flex;
+    justify-content: space-between;
+}
+
+.diachi-col{
+    flex: 1;
+}
+.diachi-col p{
+    font-size: 2.8rem;
+}
